@@ -27,8 +27,12 @@ public class Cadastro {
         return id;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
     public void exibirDados() {
-        System.out.println ("ID: " + id);
+        System.out.println("ID: " + id);
         System.out.println("Nome: " + nome);
         System.out.println("Data de Nascimento: " + dataNascimento);
         System.out.println("CPF: " + cpf);
@@ -36,6 +40,4 @@ public class Cadastro {
         System.out.println("Telefone: " + telefone);
         System.out.println("Email: " + email);
     }
-
-
 }
