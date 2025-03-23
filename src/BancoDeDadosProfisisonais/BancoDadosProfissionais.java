@@ -35,4 +35,17 @@ public class BancoDadosProfissionais {
             }
         }
     }
+
+    //  Novo método para retornar apenas os nomes dos profissionais
+    public List<String> getNomesProfissionais() {
+        List<String> nomes = new ArrayList<>();
+        for (CadastroProfissional profissional : profissionais) {
+            nomes.add(profissional.getNome());
+        }
+        return nomes;
+    }
+
+    public List<CadastroProfissional> getProfissionais() {
+        return profissionais;
+    }
 }
