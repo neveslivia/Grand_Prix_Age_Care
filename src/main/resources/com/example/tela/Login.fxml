@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tela.HelloController">
+   <children>
+      <AnchorPane prefHeight="643.0" prefWidth="360.0">
+         <children>
+            <VBox layoutX="7.0" layoutY="214.0" prefHeight="105.0" prefWidth="347.0" style="-fx-background-color: linear-gradient(#004aad,#5de0e6); -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, #00000050, 10, 0, 0, 5);;" />
+            <Button fx:id="handleBottomLogTelainicial" layoutX="116.0" layoutY="353.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="32.0" prefWidth="128.0" style="-fx-border-radius: 100; -fx-effect: dropshadow(gaussian, #00000050, 10, 0, 0, 5); -fx-background-color: linear-gradient(#FFFFFF,#FCFBF4);" text="FAÇA LOGIN">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Button>
+            <TextField layoutX="108.0" layoutY="224.0" promptText="Email(ou CRM)" style="-fx-effect: dropshadow(gaussian, #00000050, 10, 0, 0, 5);" />
+            <Label alignment="BASELINE_CENTER" layoutX="78.0" layoutY="430.0" prefHeight="25.0" prefWidth="141.0" text="Age">
+               <font>
+                  <Font name="Arial" size="27.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.9274447723894089" startY="0.687697172917026">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <PasswordField layoutX="108.0" layoutY="277.0" promptText="Senha" style="-fx-effect: dropshadow(gaussian, #00000050, 10, 0, 0, 5);" />
+            <Label alignment="BASELINE_CENTER" layoutX="181.0" layoutY="428.0" prefHeight="35.0" prefWidth="59.0" text="Care" textFill="#00a1ff">
+               <font>
+                  <Font name="Arial" size="27.0" />
+               </font>
+            </Label>
+            <Label alignment="BASELINE_CENTER" layoutX="62.0" layoutY="88.0" prefHeight="32.0" prefWidth="163.0" text="SEJA BEM-">
+               <font>
+                  <Font name="Arial" size="27.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.9274447723894089" startY="0.687697172917026">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label alignment="BASELINE_CENTER" layoutX="209.0" layoutY="86.0" prefHeight="35.0" prefWidth="93.0" text="VINDO" textFill="#00a1ff">
+               <font>
+                  <Font name="Arial" size="27.0" />
+               </font>
+            </Label>
+            <Line endX="97.66665649414062" endY="7.62939453125E-6" fill="#00a1ff" layoutX="246.0" layoutY="14.0" startX="78.66665649414062" startY="7.62939453125E-6" stroke="#005e7b" />
+            <Line endX="97.66665649414062" endY="7.62939453125E-6" fill="#0099f2" layoutX="246.0" layoutY="19.0" startX="78.66665649414062" startY="7.62939453125E-6" stroke="#005e7b" />
+            <Label alignment="BASELINE_CENTER" layoutX="233.0" layoutY="14.0" prefHeight="9.0" prefWidth="34.0" text="Sobre nós">
+               <font>
+                  <Font name="Arial" size="6.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.9274447723894089" startY="0.687697172917026">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label alignment="BASELINE_CENTER" layoutX="273.0" layoutY="14.0" prefHeight="9.0" prefWidth="34.0" text="Contato">
+               <font>
+                  <Font name="Arial" size="6.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.9274447723894089" startY="0.687697172917026">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label alignment="BASELINE_CENTER" layoutX="129.0" layoutY="194.0" prefHeight="14.0" prefWidth="83.0" text="não tem uma" textFill="#1d1d1d">
+               <font>
+                  <Font name="Arial" size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="handleLabelClick" alignment="BASELINE_CENTER" layoutX="202.0" layoutY="188.0" onMouseClicked="#TelaCadastro" prefHeight="25.0" prefWidth="34.0" text="Conta?" textFill="#00a1ff">
+               <font>
+                  <Font name="Arial" size="7.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="101.0" layoutY="476.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(gaussian, #00000050, 10, 0, 0, 5);">
+               <image>
+                  <Image url="@../../../image/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
