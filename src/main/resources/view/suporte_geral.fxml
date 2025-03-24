@@ -13,14 +13,14 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.suporteMonitoramento.Controller.suporteGeralController">
    <children>
-      <Text fill="#47cb31" layoutX="124.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Suporte">
+      <Text fill="#004aad" layoutX="124.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Suporte">
          <font>
-            <Font name="Verdana Bold" size="26.0" />
+            <Font name="Arial Bold" size="26.0" />
          </font>
       </Text>
-      <TextField layoutX="84.0" layoutY="62.0" prefHeight="27.0" prefWidth="250.0" promptText="Procurar na central de ajuda... " style="-fx-border-color: #47cb31; -fx-border-radius: 10; -fx-border-width: 1; -fx-background-radius: 10; -fx-background-color: ;" />
+      <TextField layoutX="90.0" layoutY="57.0" prefHeight="27.0" prefWidth="250.0" promptText="Procurar na central de ajuda... " style="-fx-border-color: #004aad; -fx-border-radius: 10; -fx-border-width: 1; -fx-background-radius: 10; -fx-background-color: ;" />
       <ImageView fitHeight="56.0" fitWidth="82.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@logo.png" />
@@ -28,11 +28,11 @@
       </ImageView>
       <Text layoutX="21.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tópicos de ajuda">
          <font>
-            <Font name="System Bold" size="18.0" />
+            <Font name="Arial Bold" size="18.0" />
          </font>
       </Text>
       <Line endX="236.0" layoutX="123.0" layoutY="128.0" startX="-124.0" strokeWidth="2.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" height="343.0" layoutX="48.0" layoutY="155.0" stroke="WHITE" strokeType="INSIDE" style="-fx-arc-width: 30; -fx-arc-height: 30;" width="268.0">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="307.0" layoutX="48.0" layoutY="155.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" style="-fx-arc-width: 30; -fx-arc-height: 30;" width="268.0">
          <fill>
             <LinearGradient endX="0.05687203791469194" endY="1.0" startX="1.0" startY="0.06161137440758291">
                <stops>
@@ -60,7 +60,7 @@
             <Image url="@seguro.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="44.0" fitWidth="37.0" layoutX="57.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="44.0" fitWidth="37.0" layoutX="57.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@questao.png" />
          </image>
@@ -90,33 +90,37 @@
             <Font name="System Bold" size="16.0" />
          </font>
       </Text>
-      <Button layoutX="100.0" layoutY="174.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Perguntas Frequentes" textFill="WHITE">
+      <Button fx:id="bt_perguntas_frequentes" layoutX="103.0" layoutY="171.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Perguntas Frequentes" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="16.0" />
+            <Font name="Arial Bold" size="16.0" />
          </font>
       </Button>
-      <Button layoutX="100.0" layoutY="224.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="202.0" style="-fx-background-color: transparent;" text="Segurança e Verificação" textFill="WHITE">
+      <Button fx:id="bt_seguranca_verificacao" layoutX="91.0" layoutY="224.0" mnemonicParsing="false" onAction="#abrirSegurancaVerificacao" prefHeight="35.0" prefWidth="219.0" style="-fx-background-color: transparent;" text="Segurança e Verificação" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="16.0" />
+            <Font name="Arial Bold" size="16.0" />
          </font>
       </Button>
-      <Button layoutX="100.0" layoutY="283.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Pagamentos" textFill="WHITE">
+      <Button fx:id="bt_pagamentos" layoutX="100.0" layoutY="283.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Pagamentos" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="16.0" />
+            <Font name="Arial Bold" size="16.0" />
          </font>
       </Button>
-      <Button layoutX="103.0" layoutY="341.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Conversas e Ligações" textFill="WHITE">
+      <Button fx:id="bt_conversas_ligacoes" layoutX="103.0" layoutY="341.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Conversas e Ligações" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="16.0" />
+            <Font name="Arial Bold" size="16.0" />
          </font>
       </Button>
-      <Button layoutX="103.0" layoutY="409.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Fale Conosco!" textFill="WHITE">
+      <Button fx:id="bt_chamado_suporte" layoutX="103.0" layoutY="409.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Fale Conosco!" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="16.0" />
+            <Font name="Arial Bold" size="16.0" />
          </font>
       </Button>
       <Button layoutX="288.0" layoutY="593.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="➡" />
       <Button layoutX="43.0" layoutY="593.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="⬅" />
       <Button layoutX="88.0" layoutY="539.0" mnemonicParsing="false" style="-fx-effect: 0,0,3;" text="Termos e Política de Privacidade" />
+      <Line endX="148.0" layoutX="163.0" layoutY="211.0" startX="-114.0" stroke="WHITE" strokeWidth="2.0" />
+      <Line endX="148.0" layoutX="164.0" layoutY="271.0" startX="-114.0" stroke="WHITE" strokeWidth="2.0" />
+      <Line endX="148.0" layoutX="165.0" layoutY="327.0" startX="-114.0" stroke="WHITE" strokeWidth="2.0" />
+      <Line endX="148.0" layoutX="162.0" layoutY="386.0" startX="-114.0" stroke="WHITE" strokeWidth="2.0" />
    </children>
 </AnchorPane>

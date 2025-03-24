@@ -1,5 +1,4 @@
-package Entities;
-
+package main.java.suporteMonitoramento.Entities;
 import java.util.ArrayList;
 import java.util.List;
 

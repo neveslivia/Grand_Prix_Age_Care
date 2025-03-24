@@ -1,9 +1,13 @@
-package Entities;
+package main.java.suporteMonitoramento.Entities;
+
+import Cadastros.Cadastro;
 
 import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
+
+import static main.java.suporteMonitoramento.Entities.Status_Chamado.*;
 
 public class Chamado_Suporte {
     private  String idChamado;
@@ -25,9 +29,13 @@ public class Chamado_Suporte {
         this.dataSolicitacao = dataSolicitacao;
         this.dataConclusao = dataConclusao;
     }
+    private Cadastro cadastro;
 
 
     public Chamado_Suporte() {
+    }
+    public boolean verificar_senha_email(String email, String senha) {
+        return cadastro.getEmail().equals(email) && cadastro.getSenha().equals(senha);
     }
 
     public String getIdChamado() {
@@ -139,10 +147,10 @@ public class Chamado_Suporte {
         respostas.put("acompanhamento", "Os relatórios de monitoramento podem ser acessados na aba 'Histórico' dentro do aplicativo.");
     }
     public void atualizarStatus(){
-        if (status == Status_Chamado.ABERTO) {
-            status = Status_Chamado.EM_ANDAMENTO;
-        } else if (status == Status_Chamado.EM_ANDAMENTO) {
-            status = Status_Chamado.REALIZADO;
+        if (status == ABERTO) {
+            status = EM_ANDAMENTO;
+        } else if (status == EM_ANDAMENTO) {
+            status = REALIZADO;
         }
 
     }

@@ -23,6 +23,11 @@ public class Cadastro {
         this.senha = senha;
     }
 
+    public Cadastro(String email, String senha) {
+        this.email = email;
+        this.senha = senha;
+    }
+
     public int getId() {
         return id;
     }
@@ -30,6 +35,15 @@ public class Cadastro {
     public String getNome() {
         return nome;
     }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
 
     public void exibirDados() {
         System.out.println("ID: " + id);

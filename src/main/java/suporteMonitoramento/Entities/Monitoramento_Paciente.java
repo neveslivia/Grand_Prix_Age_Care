@@ -1,4 +1,4 @@
-package Entities;
+package main.java.suporteMonitoramento.Entities;
 
 public class Monitoramento_Paciente {
     private String nomePaciente;
